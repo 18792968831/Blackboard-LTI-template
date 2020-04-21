@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div th:text="'Request Method：' + ${method}"></div>
+	<br><br>
+	<div th:text="'Request Header:'"></div>
+	<div th:each="mapS:${headerMap}">
+		<div th:text="${mapS}"></div>
+	</div>
+	<br><br>
+	<div th:text="'Request Body:'"></div>
+	<div th:each="mapS:${bodyMap}">
+		<div th:text="${mapS}"></div>
+	</div>
+</body>
+</html>
